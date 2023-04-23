@@ -9,11 +9,9 @@
     <meta name="description" content="Re01 编程课的Flex布局演示。" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="./public.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./font/iconfont.css">
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="./font_2/iconfont.css">
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 <style type="text/css">a{
@@ -64,9 +62,18 @@ text-decoration: none;
       .mgl {
         margin-left: 600px;
       }
+      .mgl2 {
+        margin-left: 600px;
+      }
       /* 上外边距 */
       .mgt8 {
         margin-top: 8px;
+      }
+      .mgt500 {
+        margin-top: 500px;
+      }
+      .mgt50 {
+        margin-top: 50px;
       }
       /* 四个小盒子 */
       .shuJu {
@@ -125,7 +132,7 @@ text-decoration: none;
       <!-- 头部栏 -->
       <div style="height: 100px; z-index: 2" class="huiSe yinYing">
         <a link href="https://www.aplaybox.com/">
-        <span class="iconfont icon-ziyuan book">资源网 
+        <span class="iconfont icon-ziyuan book">模之屋 
        </span>
       
    </a> 
@@ -134,17 +141,42 @@ text-decoration: none;
    <a link href="https://www.bilibili.com/video/BV1sb411s7ED/?spm_id_from=333.337.search-card.all.click&vd_source=3fa4ff4060553733314b0aed5d2c6a2e/">
      <span class="iconfont icon-jiaocheng book"> 教程网</span>
 
- </a></div>
+ </a>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a link href="https://www.aplaybox.com/">
+  <span class="iconfont icon-bilibili book" style="text-transform:lowercase;">小夜子lh的b站主页
+ </span>
+
+</a> 
+
+</div>
+
+
+
       <!-- 内容区 -->
-      <div class=" flex flex1 neiRong mgl" style="overflow: auto">
    
-          <!-- 数据区 -->
-          <div class="flex shuJuQu">
+   
+          
            
         
           <!-- 列表区，列表数据可以无限增加 -->
-          <div class="flex column" style="opacity: 0.98;"/>
+          <div class="mgl mgt8" style="opacity: 0.98;"/>
             <!-- 列表项 -->
+           
             <div class="lieBiaoXiang mgt8 baiSe yinYing">
               <a link href="https://www.bilibili.com/video/BV1sb411s7ED/?spm_id_from=333.337.search-card.all.click&vd_source=3fa4ff4060553733314b0aed5d2c6a2e/">
                 <img src="./jiaochen1.png" alt="推荐教程1" title="推荐教程1" width="800" > </a>
@@ -159,7 +191,7 @@ text-decoration: none;
           <a link href="https://www.bilibili.com/video/BV1Zi4y1b7vv/?spm_id_from=333.999.0.0">
             <img src="./jiaochen3.jpg" alt="推荐教程3" title="推荐教程3" width="800" > </a>
             推荐指数:⭐⭐⭐⭐
-       </div>
+      
        <div class="lieBiaoXiang mgt8 baiSe yinYing">
         <a link href="https://www.bilibili.com/video/BV1kW411v7my/?spm_id_from=333.999.0.0&vd_source=3fa4ff4060553733314b0aed5d2c6a2e/">
           <img src="./jiaochen4.jpg" alt="推荐教程4" title="推荐教程4" width="800" > </a>
@@ -176,7 +208,7 @@ text-decoration: none;
             <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
             <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
           </div>
-        </div>
+     
        
          
         </div>
